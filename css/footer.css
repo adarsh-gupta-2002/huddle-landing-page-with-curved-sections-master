@@ -1,0 +1,145 @@
+
+.footer{
+    color: #fff;
+}
+.footer .footer-content{
+    text-align: left;
+}
+
+ 
+.footer-content{
+    background: hsl(192, 100%, 9%);
+    padding-inline:2em ;
+    padding-block: 4.5em 2em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+
+.footer .logo{
+    filter: brightness(0) invert(1);
+    margin-bottom: 1em;
+}
+
+.footer-icon{
+    width: 1rem;
+}
+
+
+/* left */
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+}
+
+
+.phone{
+    margin-block: 2em 1em;
+}
+
+
+.phone , 
+.email{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+
+.social{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+
+
+.social i{
+    color: #fff;
+    font-size: 2em;
+}
+
+ 
+
+.social li:hover i{
+    
+    color: rgb(29, 158, 209);
+}
+
+
+/* right */
+.right h2{
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+
+}
+
+.form{ 
+    display: flex;
+    margin-block: 2em 0;
+    flex-direction: column;
+    gap: 1em;
+
+}
+.form .primary-btn{
+    border-radius: 0.3rem;
+    width: 170px;
+    padding-block: 0.7em;
+    margin-left: auto;
+}
+
+input{
+    width: 100%;
+    padding: 0.7em 1em ;
+    border-radius: 0.3rem;
+}
+
+.show-error input{
+    border: 1px solid hsl(0, 100%, 63%);
+
+}
+
+.show-error .error{
+    display: unset;
+}
+.error{
+    display: none;
+    font-size: 14px;
+    color: hsl(0, 100%, 63%);
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+
+
+
+
+
+@media(min-width:768px){
+    .footer-content{
+        flex-direction: row;
+    }
+
+    .left,
+    .right{
+        max-width: 370px;
+    }
+}
+
+@media(min-width:1000px){
+    .footer-content{
+        padding-inline: 5rem;
+    }
+}
+
+@media(min-width:1300px){
+    .footer-content{
+        padding-inline: 10%;
+    }
+}

@@ -1,0 +1,65 @@
+
+section{
+    padding-block: 5rem;
+}
+.content{ 
+    padding: 0rem 2rem ;
+}
+ 
+
+ 
+
+.section-one .section-content{
+    background: hsl(207, 100%, 98%);
+    padding-block: 3em;
+}
+
+
+/* section-three */
+
+.section-three .section-content{
+    background: hsl(207, 100%, 98%);
+    padding-block: 1.5em 3em;
+}
+
+.section-four{
+    padding-block: 2em 8em;
+}
+.section-four h2{
+    margin-bottom: 1.5em;
+}
+
+ 
+
+@media(min-width:768px){
+    .content{ 
+        max-width: 550px;
+        margin-top: 2em;
+        margin-inline: auto;
+         
+    }
+
+
+    
+}
+
+@media(min-width:1000px){
+    .section-content{
+        display: flex;
+        text-align: left;
+        gap: 2em;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline:5em ;
+    }
+
+    .content{
+        max-width: 600px;
+    }
+}
+
+@media(min-width:1300px){
+    .section-content{ 
+        padding-inline: 10%;
+    }
+}
